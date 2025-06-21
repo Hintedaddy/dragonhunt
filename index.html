@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" class="theme-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Just a moment...</title>
+    <style>
+        /* Base styles from original HTML */
+        *{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}button{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}a{text-decoration:none;transition:color .15s}a:hover{text-decoration:underline}.clearfix:after{clear:both;content:"";display:table}.clearfix .column{float:left;width:50%;padding-right:1.5rem}.text-center{text-align:center}.font-red{color:#b20f03}.rtl .heading-favicon{margin-left:.5rem;margin-right:0}.rtl #challenge-success-text{background-position:100%;padding-left:0;padding-right:42px}.rtl #challenge-error-text{background-position:100%;padding-left:0;padding-right:34px}
+
+        /* Theme-specific styles (dark theme, as preferred by the provided HTML) */
+        body.theme-dark{color:#d9d9d9;background-color:#222}body.theme-dark a{color:#fff}body.theme-dark a:hover{color:#ee730a;text-decoration:underline}body.theme-dark .lds-ring div{border-color:#999 #0000 #0000}body.theme-dark .font-red{color:#b20f03}body.theme-dark .ctp-button{color:#1d1d1d;background-color:#4693ff}body.theme-dark #challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5.NDk1LTkuNi0xLjQyLTEuNDA1eiIvPjwvc3ZnPg)}body.theme-dark #challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEz.MDE1IDAgMCAwIDE2IDNTAzMiAxMzEgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTE.MDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc>)}
+
+        /* Layout and Typography from original HTML */
+        .main-content{width:100%;max-width:60rem;margin:8rem auto;padding-left:1.5rem;padding-right:1.5rem}.main-content .loading-verifying{height:76.391px}.spacer{margin:2rem 0}.spacer-top{margin-top:4rem}.spacer-bottom{margin-bottom:2rem}.heading-favicon{width:2rem;height:2rem;margin-right:.5rem}@media (width<=720px){.main-content{margin-top:4rem}.heading-favicon{width:1.5rem;height:1.5rem}}.main-wrapper{flex-direction:column;flex:1;align-items:center;display:flex}.h1{font-size:2.5rem;font-weight:500;line-height:3.75rem}.h2{font-size:1.5rem;font-weight:500;line-height:2.25rem}.core-msg{font-size:1.5rem;font-weight:400;line-height:2.25rem}.body-text{font-size:1rem;font-weight:400;line-height:1.25rem}@media (width<=720px){.h1{font-size:1.5rem;line-height:1.75rem}.h2{font-size:1.25rem;line-height:1.5rem}.core-msg{font-size:1rem;line-height:1.5rem}}#challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI2ZjNTc0YSIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEz.MDE1IDAgMCAwIDE2IDNTA3MzIgMTMxIDEzIDEzQTUuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTE.MDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjZmM1NzRhIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc>)}#challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5.NDk1LTkuNi0xLjQyLTEuNDA1eiIvPjwvc3Zn>)}
+
+        /* Spinner styles from original HTML */
+        .loading-verifying{height:76.391px}.lds-ring{width:1.875rem;height:1.875rem;display:inline-block;position:relative}.lds-ring div{box-sizing:border-box;border:.3rem solid #0000;border-top-color:#313131;border-radius:50%;width:1.875rem;height:1.875rem;animation:1.2s cubic-bezier(.5,0,.5,1) infinite lds-ring;display:block;position:absolute}.lds-ring div:first-child{animation-delay:-.45s}.lds-ring div:nth-child(2){animation-delay:-.3s}.lds-ring div:nth-child(3){animation-delay:-.15s}@keyframes lds-ring{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.challenge-content .loading-verifying{height:76.391px}
+
+        /* Footer styles from original HTML */
+        .footer{width:100%;max-width:60rem;margin:0 auto;padding-left:1.5rem;padding-right:1.5rem;font-size:.75rem;line-height:1.125rem}.footer-inner{border-top:1px solid #d9d9d9;padding-top:1rem;padding-bottom:1rem}.diagnostic-wrapper{margin-bottom:.5rem}.footer .ray-id{text-align:center}.footer .ray-id code{font-family:monaco,courier,monospace}@media (width<=720px){.diagnostic-wrapper{flex-wrap:wrap;justify-content:center;display:flex}.clearfix:after{display:initial;clear:none;text-align:center;content:none}.column{padding-bottom:2rem}.clearfix .column{float:none;word-break:keep-all;width:auto;padding:0}.zone-name-title{margin-bottom:1rem}}
+        .core-msg,.zone-name-title{overflow-wrap:break-word}
+
+        /* Override specific styles for dark theme in the spinner's border color to match the original provided HTML */
+        body.theme-dark .lds-ring div {
+            border-top-color: #999; /* Adjust for dark mode spinner visibility */
+        }
+
+        /* Styles for the fake Turnstile placeholder */
+        #fake-turnstile-widget {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start; /* Align content to the left within the widget */
+            border: 1px solid #444;
+            background-color: #333;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 2rem auto; /* Centered margin */
+            cursor: pointer;
+            width: fit-content; /* Adjust width to content */
+            min-width: 200px; /* Ensure a minimum width */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Subtle shadow */
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+
+        #fake-turnstile-widget:hover {
+            background-color: #3a3a3a;
+            border-color: #666;
+        }
+
+        #fake-turnstile-checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #666;
+            border-radius: 4px;
+            background-color: #222;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0; /* Prevent shrinking */
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+
+        #fake-turnstile-checkbox.checked {
+            background-color: #007bff; /* Blue for checked */
+            border-color: #007bff;
+        }
+
+        #fake-turnstile-checkbox.checked svg {
+            display: block;
+        }
+
+        #fake-turnstile-checkbox svg {
+            width: 16px;
+            height: 16px;
+            fill: white;
+            display: none; /* Hidden by default */
+        }
+
+        #fake-turnstile-text {
+            color: #d9d9d9;
+            font-size: 0.9rem;
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        #fake-turnstile-branding {
+            margin-left: 10px;
+            color: #888;
+            font-size: 0.75rem;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        /* Feeling Stuck Button */
+        #stuck-button {
+            background-color: #0051c3; /* Cloudflare blue */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.313rem; /* Matches original button radius */
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            margin-top: 2rem;
+            display: none; /* Hidden by default */
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 1.313rem;
+        }
+        #stuck-button:hover {
+            background-color: #003681; /* Darker blue on hover */
+        }
+
+        /* Ensure .h1 message has its original style when visible */
+        #initial-message.h1-visible {
+            font-size: 2.5rem;
+            font-weight: 500;
+            line-height: 3.75rem;
+        }
+        @media (width<=720px){
+            #initial-message.h1-visible {
+                font-size: 1.5rem;
+                line-height: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-wrapper" role="main">
+        <div class="main-content">
+            <h1 id="zone-name-title" class="zone-name-title h1"></h1>
+            <p id="initial-message" class="h2 spacer-bottom">Verify you are human by completing the action below.</p>
+
+            <!-- Fake Turnstile widget -->
+            <div id="fake-turnstile-widget" tabindex="0" role="checkbox" aria-checked="false">
+                <div id="fake-turnstile-checkbox">
+                    <svg viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+                </div>
+                <span id="fake-turnstile-text">I am human</span>
+                <span id="fake-turnstile-branding">Protected by Turnstile</span>
+            </div>
+
+            <!-- Loading/Verifying spinner and message -->
+            <div id="loading-verifying-section" class="spacer loading-verifying" style="display: none;">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+            <div id="core-verification-message" class="core-msg spacer spacer-top"></div>
+
+            <!-- "Feeling Stuck?" Button -->
+            <button id="stuck-button">Feeling Stuck?</button>
+
+            <noscript>
+                <div class="h2">
+                    <span id="challenge-error-text">Enable JavaScript and cookies to continue</span>
+                </div>
+            </noscript>
+        </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="clearfix diagnostic-wrapper">
+                <div class="ray-id">Ray ID: <code id="ray-id-code"></code></div>
+            </div>
+            <div class="text-center" id="footer-text">
+                Performance &amp; security by <a rel="noopener noreferrer" href="https://www.cloudflare.com?utm_source=challenge&amp;utm_campaign=m" target="_blank">Cloudflare</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const zoneNameTitle = document.getElementById('zone-name-title');
+        const initialMessage = document.getElementById('initial-message');
+        const fakeTurnstileWidget = document.getElementById('fake-turnstile-widget');
+        const fakeTurnstileCheckbox = document.getElementById('fake-turnstile-checkbox');
+        const loadingVerifyingSection = document.getElementById('loading-verifying-section');
+        const coreVerificationMessage = document.getElementById('core-verification-message');
+        const stuckButton = document.getElementById('stuck-button');
+        const rayIdCode = document.getElementById('ray-id-code');
+
+        // Original domain for the page
+        const originalDomain = "dragonhunt.xyz";
+
+        let stuckButtonTimeoutId;
+
+        // Function to generate a random Ray ID (16 hex characters)
+        function generateRayId() {
+            return Array.from({ length: 16 }, () => Math.floor(Math.random() * 16).toString(16)).join('');
+        }
+
+        function showStuckButton() {
+            clearTimeout(stuckButtonTimeoutId); // Clear any existing timeout
+            stuckButtonTimeoutId = setTimeout(() => {
+                stuckButton.style.display = 'block';
+            }, 6000); // Show button after 6 seconds of being in verification state
+        }
+
+        function resetPage() {
+            // Clear any active timeouts for the stuck button
+            clearTimeout(stuckButtonTimeoutId);
+            stuckButton.style.display = 'none';
+
+            // Set initial content and visibility
+            zoneNameTitle.textContent = originalDomain;
+            initialMessage.textContent = `Verify you are human by completing the action below.`;
+            initialMessage.classList.remove('h1-visible'); // Reset message size
+            initialMessage.style.display = 'block'; // Ensure initial message is visible
+
+            coreVerificationMessage.textContent = `${originalDomain} needs to review the security of your connection before proceeding.`;
+            coreVerificationMessage.style.display = 'none'; // Hide core message initially
+
+            fakeTurnstileWidget.style.display = 'flex'; // Show fake Turnstile
+            fakeTurnstileCheckbox.classList.remove('checked'); // Uncheck the fake checkbox
+            fakeTurnstileWidget.setAttribute('aria-checked', 'false');
+
+            loadingVerifyingSection.style.display = 'none'; // Hide spinner
+
+            rayIdCode.textContent = generateRayId(); // Update Ray ID
+        }
+
+        async function startVerificationPhase() {
+            // Phase 2: Verification process starts
+            fakeTurnstileWidget.style.display = 'none'; // Hide Turnstile
+            initialMessage.textContent = "Checking your browser..."; // Change initial message
+            initialMessage.classList.add('h1-visible'); // Make it bigger
+            loadingVerifyingSection.style.display = 'block'; // Show spinner
+            coreVerificationMessage.style.display = 'block'; // Show core message
+
+            showStuckButton(); // Start timer for "Feeling Stuck?" button
+
+            await new Promise(resolve => setTimeout(resolve, 5000)); // Simulate verification time (e.g., 5 seconds)
+
+            // Instead of success, loop back to the initial state to re-verify
+            // This creates the "stuck" effect for bots
+            resetPage();
+        }
+
+        // Event listener for the fake Turnstile widget
+        fakeTurnstileWidget.addEventListener('click', () => {
+            if (!fakeTurnstileCheckbox.classList.contains('checked')) {
+                fakeTurnstileCheckbox.classList.add('checked');
+                fakeTurnstileWidget.setAttribute('aria-checked', 'true');
+                // Simulate a slight delay before proceeding to verification after click
+                setTimeout(startVerificationPhase, 500);
+            }
+        });
+
+        // Event listener for the "Feeling Stuck?" button
+        stuckButton.addEventListener('click', () => {
+            // Clicking stuck button also resets and restarts the process
+            resetPage();
+        });
+
+        // Initial call to start the simulation when the DOM is ready
+        document.addEventListener('DOMContentLoaded', resetPage);
+    </script>
+</body>
+</html>
